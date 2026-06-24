@@ -216,7 +216,7 @@ img {
   color: var(--logo-background);
   letter-spacing: .05em;
   margin-top: 0;
-  margin-bottom: 12px;
+  margin-bottom: 0;
   margin-right: auto;
   padding-left: 0;
   font-family: Inter, sans-serif;
@@ -227,11 +227,14 @@ img {
 }
 
 .service-description {
+  min-height: 90px;
   color: var(--service-description);
+  align-items: center;
   margin-bottom: 20px;
   margin-right: 75px;
   font-family: Roboto Flex, sans-serif;
   font-style: normal;
+  display: flex;
 }
 
 .list {
@@ -824,6 +827,8 @@ img {
 }
 
 .service-panel {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
   flex-flow: column;
   justify-content: center;
   align-items: stretch;
@@ -1054,6 +1059,8 @@ img {
 }
 
 .service-panel-skinfade {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
   flex-flow: column;
   order: 0;
   justify-content: center;
@@ -1064,6 +1071,8 @@ img {
 }
 
 .service-panel-headshave {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
   flex-flow: column;
   grid-template-rows: auto auto;
   grid-template-columns: 1fr 1fr;
@@ -1075,6 +1084,8 @@ img {
 }
 
 .service-panel-beardtrim, .service-panel-towelshave, .service-panel-buzzcut {
+  grid-column-gap: 12px;
+  grid-row-gap: 12px;
   flex-flow: column;
   justify-content: center;
   align-items: stretch;
@@ -1348,7 +1359,7 @@ img {
   }
 
   .service-description {
-    border: 0 solid #000;
+    align-items: center;
     margin-right: 0;
   }
 
@@ -1554,10 +1565,6 @@ img {
     border-left: 2px none var(--booking-button);
   }
 
-  .service-panel-skinfade, .service-panel-headshave, .service-panel-beardtrim, .service-panel-towelshave, .service-panel-buzzcut {
-    margin-top: 0;
-  }
-
   .button-price-grid {
     margin-right: 0;
   }
@@ -1651,7 +1658,8 @@ img {
   }
 
   .service-description {
-    margin-bottom: 20px;
+    min-height: 100px;
+    margin-bottom: 10px;
     margin-right: 0;
     font-family: Roboto Flex, sans-serif;
     font-style: normal;
@@ -1820,23 +1828,20 @@ img {
     flex-flow: column;
   }
 
-  .menu-item-headshave, .menu-item-slkinfade {
+  .menu-item-headshave {
+    margin-left: 0;
+  }
+
+  .service-panel {
+    grid-column-gap: 12px;
+    grid-row-gap: 12px;
+  }
+
+  .menu-item-slkinfade {
     margin-left: 0;
   }
 
   .service-menu-item-default {
-    border-top-style: solid;
-    border-top-width: 1px;
-    border-top-color: var(--service-bullet);
-    border-right-style: solid;
-    border-right-width: 1px;
-    border-right-color: var(--service-bullet);
-    border-bottom-style: solid;
-    border-bottom-width: 1px;
-    border-bottom-color: var(--service-bullet);
-    border-left-style: solid;
-    border-left-width: 1px;
-    border-left-color: var(--service-bullet);
     flex-flow: row;
     flex-shrink: 0;
     margin-left: 0;
@@ -1954,10 +1959,12 @@ img {
   }
 
   .service-heading {
+    padding-top: 0;
     font-size: 24px;
   }
 
   .service-description {
+    min-height: 120px;
     color: var(--service-description);
   }
 
@@ -2163,6 +2170,10 @@ img {
     width: 4px;
   }
 
+  .service-panel {
+    margin-top: 0;
+  }
+
   .menu-item-slkinfade {
     border-bottom-color: var(--service-border);
   }
@@ -2184,7 +2195,18 @@ img {
     color: var(--service-bullet);
   }
 
-  .service-panel-skinfade, .service-panel-headshave, .service-panel-beardtrim, .service-panel-towelshave, .service-panel-buzzcut {
+  .service-panel-skinfade {
+    margin-top: 0;
+    display: none;
+  }
+
+  .service-panel-headshave, .service-panel-beardtrim {
+    margin-top: 0;
+    display: flex;
+  }
+
+  .service-panel-towelshave, .service-panel-buzzcut {
+    margin-top: 0;
     display: none;
   }
 
