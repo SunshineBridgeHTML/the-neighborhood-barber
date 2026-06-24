@@ -1060,7 +1060,7 @@ img {
   margin-top: 20px;
   padding-top: 0;
   padding-bottom: 0;
-  display: flex;
+  display: none;
   position: static;
 }
 
@@ -1073,7 +1073,7 @@ img {
   grid-auto-columns: 1fr;
   justify-content: space-between;
   margin-top: 20px;
-  display: flex;
+  display: none;
 }
 
 .service-panel-beardtrim, .service-panel-towelshave, .service-panel-buzzcut {
@@ -1081,7 +1081,7 @@ img {
   justify-content: space-between;
   align-items: stretch;
   margin-top: 20px;
-  display: flex;
+  display: none;
 }
 
 .button-price-grid {
@@ -2279,10 +2279,6 @@ img {
 
 #w-node-fe55d755-67be-ed07-efa0-71494b92c5b5-1e3e1155, #w-node-d09fb575-02b6-d6f3-bf2c-96000a17bd87-1e3e1155, #w-node-dbb361cd-6e8f-ccd9-91de-9edd988091d2-1e3e1155, #w-node-_95fd2dcc-80f8-48ae-18a9-79e630bba590-1e3e1155 {
   justify-self: center;
-}
-
-#w-node-_541f0e2d-b108-8905-ec4d-b35c734969d6-1e3e1155, #w-node-bef6062b-74bb-e8a3-d877-68f5af134483-1e3e1155, #w-node-_8617c8cb-b5e9-c4a3-6f78-acec73d1de22-1e3e1155, #w-node-_6b6137ff-4e83-7552-98fb-9e24b9655c96-1e3e1155, #w-node-_4c555b37-25d0-b7da-628b-4b2cd8f96797-1e3e1155, #w-node-eca0ee67-1672-acf1-607c-324d897e2f06-1e3e1155 {
-  grid-area: span 1 / span 1 / span 1 / span 1;
 }
 
 #w-node-_77cf651e-8555-6a6b-07fc-919ffc30054f-1e3e1155 {
