@@ -1959,7 +1959,7 @@ img {
   }
 
   .service-heading {
-    padding-top: 0;
+    margin-top: auto;
     font-size: 24px;
   }
 
@@ -2195,19 +2195,8 @@ img {
     color: var(--service-bullet);
   }
 
-  .service-panel-skinfade {
+  .service-panel-skinfade, .service-panel-headshave, .service-panel-beardtrim, .service-panel-towelshave, .service-panel-buzzcut {
     margin-top: 0;
-    display: none;
-  }
-
-  .service-panel-headshave, .service-panel-beardtrim {
-    margin-top: 0;
-    display: flex;
-  }
-
-  .service-panel-towelshave, .service-panel-buzzcut {
-    margin-top: 0;
-    display: none;
   }
 
   .hero-content-left {
