@@ -396,10 +396,11 @@ img {
 
 .owner {
   width: 300px;
-  box-shadow: inset 14px -20px 15px -10px var(--booking-button);
+  box-shadow: 0 0 14px 3px var(--booking-button);
   text-align: center;
   object-fit: cover;
   object-position: 50% 50%;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 36px;
@@ -463,6 +464,7 @@ img {
   color: var(--main-text);
   text-align: center;
   letter-spacing: .08em;
+  padding-top: 20px;
   font-family: Inter, sans-serif;
   font-size: 12px;
   font-weight: 600;
