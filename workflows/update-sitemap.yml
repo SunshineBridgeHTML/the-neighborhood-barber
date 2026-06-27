@@ -1,0 +1,69 @@
+name: Update Sitemap
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  update-sitemap:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Generate sitemap
+        run: |
+          DOMAIN="https://www.the-neighborhoodbarber.com"
+          TODAY=$(date -u +"%Y-%m-%d")
+
+          # Files to exclude from the sitemap
+          EXCLUDE="404.html"
+
+          # Start the sitemap
+          cat > sitemap.xml <<EOF
+          <?xml version="1.0" encoding="UTF-8"?>
+          <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+          EOF
+
+          # Loop through all root-level HTML files
+          for file in *.html; do
+            # Skip excluded files
+            if echo "$EXCLUDE" | grep -qw "$file"; then
+              continue
+            fi
+
+            # Build the URL: index.html becomes the root /
+            if [ "$file" = "index.html" ]; then
+              loc="$DOMAIN/"
+              priority="1.0"
+            else
+              slug="${file%.html}"
+              loc="$DOMAIN/$slug"
+              priority="0.8"
+            fi
+
+            cat >> sitemap.xml <<EOF
+            <url>
+              <loc>$loc</loc>
+              <lastmod>$TODAY</lastmod>
+              <changefreq>monthly</changefreq>
+              <priority>$priority</priority>
+            </url>
+          EOF
+          done
+
+          # Close the sitemap
+          echo "</urlset>" >> sitemap.xml
+
+      - name: Commit and push if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add sitemap.xml
+          git diff --cached --quiet || git commit -m "chore: regenerate sitemap on $(date -u +"%Y-%m-%d")"
+          git push
