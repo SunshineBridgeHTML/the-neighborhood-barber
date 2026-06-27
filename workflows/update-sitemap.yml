@@ -22,7 +22,7 @@ jobs:
           TODAY=$(date -u +"%Y-%m-%d")
 
           # Files to exclude from the sitemap
-          EXCLUDE="404.html"
+          EXCLUDE="404.html 401.html"
 
           # Start the sitemap
           cat > sitemap.xml <<EOF
