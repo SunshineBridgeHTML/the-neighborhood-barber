@@ -402,7 +402,7 @@ img {
   text-align: center;
   object-fit: cover;
   object-position: 50% 50%;
-  margin-top: 20px;
+  margin-top: 30px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 36px;
@@ -491,7 +491,7 @@ img {
   max-width: 520px;
   color: var(--sub-text);
   text-align: left;
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 30px;
   font-family: Inter, sans-serif;
   font-size: 14px;
@@ -1398,6 +1398,17 @@ img {
   inset: 0;
 }
 
+.hero-subheading {
+  color: var(--booking-button);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: 15px;
+  font-family: Inter, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+}
+
 @media screen and (max-width: 991px) {
   .nav-container {
     max-width: 100%;
@@ -1680,6 +1691,12 @@ img {
     align-items: center;
     display: flex;
   }
+
+  .hero-subheading {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 20px;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -1821,6 +1838,10 @@ img {
 
   .hero-content {
     padding: 10px 20px;
+  }
+
+  .pil-text {
+    font-size: 12px;
   }
 
   .hero-heading {
@@ -2122,7 +2143,6 @@ img {
     max-width: 350px;
     margin-left: auto;
     margin-right: auto;
-    padding: 32px 16px;
   }
 
   .hero-content {
@@ -2133,6 +2153,7 @@ img {
   }
 
   .hero-heading {
+    margin-bottom: 5px;
     font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
     font-size: 32px;
   }
@@ -2338,6 +2359,10 @@ img {
   .image-5 {
     width: 100%;
     height: 100%;
+  }
+
+  .hero-subheading {
+    font-size: 16px;
   }
 }
 
