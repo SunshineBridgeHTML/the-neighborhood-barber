@@ -515,8 +515,8 @@ img {
 }
 
 .hero-cta {
-  grid-column-gap: 46px;
-  grid-row-gap: 46px;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
   align-items: center;
   display: flex;
 }
@@ -1633,8 +1633,6 @@ img {
   }
 
   .hero-cta {
-    grid-column-gap: 27px;
-    grid-row-gap: 27px;
     max-width: 600px;
   }
 
@@ -2273,8 +2271,6 @@ img {
   }
 
   .hero-cta {
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
     max-width: 325px;
   }
 
@@ -2611,6 +2607,10 @@ img {
 
   .text-block-9 {
     font-size: 16px;
+  }
+
+  .phone-block-desketop {
+    display: none;
   }
 
   .call-text-block-mobile {
