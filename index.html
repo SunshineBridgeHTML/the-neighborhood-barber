@@ -1,4 +1,4 @@
-<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Sat Jul 04 2026 23:08:30 GMT+0000 (Coordinated Universal Time)  -->
+<!DOCTYPE html><!--  This site was created in Webflow. https://webflow.com  --><!--  Last Published: Wed Jul 08 2026 03:24:36 GMT+0000 (Coordinated Universal Time)  -->
 <html data-wf-page="6a25c41dc13938611e3e1155" data-wf-site="6a25c41bc13938611e3e1152" lang="en">
 <head>
   <meta charset="utf-8">
@@ -16,7 +16,7 @@
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/webflow.css" rel="stylesheet" type="text/css">
   <link href="css/the-neighborhood-barber-longmont.webflow.css" rel="stylesheet" type="text/css">
-  <style>html.w-mod-js:not(.w-mod-ix3) :is(.navbar.navbar-2.navbar-3.navbar-4, .hero-section, .pill-div, .hero-heading, .hero-subheading, .hero-text, .hero-cta, .grid-2, .div-block-12, [data-wf-target*='["6a25c41dc13938611e3e1155","6e8ad971-4d7c-256d-628a-f67d214ae861"]'], [data-wf-target*='["6a25c41dc13938611e3e1155","9a1e26fe-ea37-4b00-308e-80145ae72d14"]'], [data-wf-target*='["6a25c41dc13938611e3e1155","0307f396-7b74-d1df-c557-e8faa2b5a982"]'], [data-wf-target*='["6a25c41dc13938611e3e1155","bf160207-7c6d-c6a9-0207-c41b8a004b71"]'], [data-wf-target*='["6a25c41dc13938611e3e1155","ff1b27ae-facb-347a-ebb3-c512e37166e8"]']) {visibility: hidden !important;}</style>
+  <style>html.w-mod-js:not(.w-mod-ix3) :is(.navbar.navbar-2.navbar-3.navbar-4, .hero-section, .pill-div, .hero-heading, .hero-subheading, .hero-text, .hero-cta, .grid-2, .div-block-12, [data-wf-target*='["6a25c41dc13938611e3e1155","6e8ad971-4d7c-256d-628a-f67d214ae861"]'], [data-wf-target*='["6a25c41dc13938611e3e1155","9a1e26fe-ea37-4b00-308e-80145ae72d14"]'], [data-wf-target*='["6a25c41dc13938611e3e1155","0307f396-7b74-d1df-c557-e8faa2b5a982"]'], [data-wf-target*='["6a25c41dc13938611e3e1155","ff1b27ae-facb-347a-ebb3-c512e37166e8"]'], [data-wf-target*='["6a25c41dc13938611e3e1155","bf160207-7c6d-c6a9-0207-c41b8a004b71"]']) {visibility: hidden !important;}</style>
   <link href="https://fonts.googleapis.com" rel="preconnect">
   <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin="anonymous">
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
@@ -291,8 +291,8 @@
         <a href="#" class="brand w-nav-brand"><img width="190" loading="lazy" alt="The Neighborhood Barber Longmont Colorado Barber Logo" src="images/Main-Logo.avif" class="logo"></a>
         <nav role="navigation" class="nav-menu w-nav-menu">
           <a href="index.html" aria-current="page" class="nav-link w-nav-link w--current">HOME</a>
-          <a href="#Services" class="nav-link w-nav-link">SERVICES</a>
-          <a href="#Reviews" class="nav-link w-nav-link">REVIEWS</a>
+          <a href="/#Services" class="nav-link w-nav-link">SERVICES</a>
+          <a href="/#Reviews" class="nav-link w-nav-link">REVIEWS</a>
           <a href="https://booksy.com/en-us/1583254_the-neighborhood-barber-longmont_barber-shop_134760_longmont#ba_s=seo" target="_blank" class="button nav w-button">BOOK NOW</a>
         </nav>
         <div class="nav-menu-button w-nav-button">
@@ -314,10 +314,21 @@
         </div>
         <h1 class="hero-heading">EXPERT <br>CRAFTS<span class="text-span-3">MAN</span>SHIP.  <br>UNDIVIDED <br>FOCUS.</h1>
         <h2 class="hero-subheading">Longmont&#x27;s Premier Barber</h2>
-        <p class="hero-text">The Neighborhood Barber is an exclusive one-chair studio where the focus is entirely on <strong><em>you.</em></strong> <br>No waiting rooms, no rushed transitions - just a curated grooming session built entirely around your look. <br>Enjoy a complimentary beverage with every service. </p>
-        <div class="hero-cta">
+        <ul role="list" class="list">
+          <li class="hero-text">The Neighborhood Barber is an exclusive one-chair studio where the focus is entirely on <strong><em>you.</em></strong> </li>
+          <li class="hero-text">No waiting rooms, no rushed transitions - just a curated grooming session built entirely around your look. </li>
+          <li class="hero-text">Enjoy a complimentary beverage with every service. </li>
+        </ul>
+        <div class="w-layout-blockcontainer hero-cta w-container">
           <a role="button" href="https://booksy.com/en-us/1583254_the-neighborhood-barber-longmont_barber-shop_134760_longmont#ba_s=seo" target="_blank" class="button w-button">Book Appointment</a>
-          <div class="phone-text"> Call or text: <br>(214) 545-7333 </div>
+          <div class="call-text-block-mobile">
+            <a href="tel:(214)545-7333" class="phone-text">CALL </a>
+            <div class="text-block-9">OR</div>
+            <a href="sms:2145457333" class="phone-text"> TEXT</a>
+          </div>
+          <div class="phone-block-desketop">
+            <div class="phone-text hero">Call or Text:  <br>(214) 545-7333 </div>
+          </div>
         </div>
       </div>
     </div>
@@ -482,7 +493,7 @@
   </section>
   <footer aria-label="Footer" class="footer">
     <div class="w-layout-blockcontainer container footer w-container">
-      <div class="div-block-5"><img src="images/Neighborhood-Barber-Icon.png" loading="lazy" width="133" alt="The Neighborhood Barber logo" class="footer-logo">
+      <div class="div-block-5"><img width="133" loading="lazy" alt="The Neighborhood Barber logo" src="images/Neighborhood-Barber-Icon.png" class="footer-logo">
         <div>
           <h2 class="heading">Hours</h2>
           <div class="div-block-6">
@@ -502,7 +513,7 @@
             <div class="body-text hours">8:30 am - 6:00 pm</div>
           </div>
         </div>
-        <div id="w-node-_15fc5422-4974-02e0-06a4-3bdcec8d8743-1e3e1155" class="div-block-14">
+        <div id="w-node-d6b7b18e-d0cd-86f2-b840-680d63f6e3eb-63f6e3c7" class="div-block-14">
           <h2 class="heading location">Location</h2>
           <a href="https://www.google.com/maps/place/The+Neighborhood+Barber+Longmont,+Co/@40.1538141,-105.1063686,21z/data=!4m6!3m5!1s0x876bf98a499d675d:0xd0926ea11ad1b8a8!8m2!3d40.1538589!4d-105.1060388!16s%2Fg%2F11ykbk_bp6?entry=ttu&amp;g_ep=EgoyMDI2MDYwMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="location">Sola Salons, Suite 15<br>700 Ken Pratt Blvd<br>Longmont, CO 80501<br></a>
           <div class="phone-text footer">Call or Text: (214) 545-7333</div>
@@ -520,5 +531,23 @@
   <script src="https://cdn.prod.website-files.com/gsap/3.15.0/gsap.min.js" type="text/javascript"></script><!--  Google Tag Manager (noscript)  -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-595QKXNT" height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
   <!--  End Google Tag Manager (noscript)  -->
+  <script>
+window.addEventListener('DOMContentLoaded', () => {
+  if (window.location.hash) {
+    // Save the hash ID and temporarily clear it to prevent the instant snap
+    const hash = window.location.hash;
+    window.scrollTo(0, 0);
+    // Wait 300ms for the DOM and assets to settle, then smoothly scroll
+    setTimeout(() => {
+      const target = document.querySelector(hash);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 300);
+  }
+});
+</script>
+  <script src="https://acsbapp.com/v1.24.50/app.js" type="text/javascript" integrity="sha384-Yd6/GVfKqookcvkKP4GzIajPWguYRxsHkRIzS8Ozw0eNIBwpF4hY2LxDB92WEt+0" crossorigin="anonymous"></script>
+  <script src="https://cdn.prod.website-files.com/6a25c41bc13938611e3e1152%2F6865fa80c0d35bf959ff7298%2F6a4a068f33e5a1cc8ee03aca%2Faccessibescriptloader-v1.0.0.js" type="text/javascript"></script>
 </body>
 </html>
