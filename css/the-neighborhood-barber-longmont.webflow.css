@@ -276,8 +276,8 @@ img {
 }
 
 .cta-content {
-  grid-column-gap: 15px;
-  grid-row-gap: 15px;
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
   opacity: 1;
   border-radius: 0;
   flex-flow: column;
@@ -286,7 +286,6 @@ img {
   grid-auto-columns: 1fr;
   justify-items: start;
   max-width: 1080px;
-  margin-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 0;
@@ -297,7 +296,8 @@ img {
 .bottom-cta {
   background-color: var(--main-background);
   color: var(--main-text);
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
   font-family: Inter, sans-serif;
   font-size: 24px;
   font-style: italic;
@@ -1570,19 +1570,15 @@ img {
   }
 
   .cta-content {
-    grid-column-gap: 15px;
-    grid-row-gap: 15px;
     grid-template-rows: auto;
     grid-template-columns: 2.5fr 1.75fr;
     grid-auto-columns: 1fr;
     max-width: 1080px;
-    margin-top: 20px;
-    margin-bottom: 20px;
     display: flex;
   }
 
   .bottom-cta {
-    margin-top: 20px;
+    margin-top: 40px;
     padding-left: 0;
   }
 
@@ -1718,7 +1714,6 @@ img {
 
   .cta-text {
     margin-bottom: 0;
-    margin-left: 28px;
   }
 
   .gallery-header {
@@ -1846,6 +1841,8 @@ img {
   }
 
   .bottom-cta {
+    margin-top: 30px;
+    margin-bottom: 30px;
     font-size: 20px;
   }
 
@@ -2034,6 +2031,10 @@ img {
     padding-bottom: 40px;
   }
 
+  .reviews-right {
+    padding-bottom: 20px;
+  }
+
   .price-text {
     font-size: 12px;
   }
@@ -2219,12 +2220,8 @@ img {
   }
 
   .cta-content {
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
     grid-template-columns: 2.5fr;
     justify-items: center;
-    margin-bottom: 0;
-    padding-bottom: 30px;
   }
 
   .bottom-cta {
@@ -2318,7 +2315,6 @@ img {
   }
 
   .button.cta-bottom {
-    margin-top: 20px;
     margin-left: auto;
   }
 
@@ -2497,6 +2493,10 @@ img {
   .phone-text {
     border: 1px solid var(--booking-button);
     padding: 5px;
+  }
+
+  .phone-text.footer {
+    border-style: none;
   }
 
   .phone-text.hero {
